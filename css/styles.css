@@ -1,0 +1,195 @@
+/* Clearfix */
+.clear:before, .clear:after {
+    content: " ";
+    display: table;
+}
+
+.clear:after {
+    clear: both;
+}
+
+.clear {
+    *zoom: 1;
+}
+
+a#pull {
+    display: none;
+}
+nav {
+    height: 40px;
+    width: 100%;
+    position: relative;
+    border: solid 1px #DDD;
+}
+
+nav ul {
+    margin: 0 auto;
+    width: 100%;
+    height: 40px;
+}
+
+nav li {
+    display: inline;
+    float: left;
+    padding-left: 5px;
+}
+
+nav a {
+    color: #000;
+    display: inline-block;
+    width: 115px;
+    text-align: center;
+    line-height: 40px;
+}
+
+nav li:last-child a {
+    border-right: 0;
+}
+
+nav a:hover, nav a:active {
+    background-color: #f3f3f3;
+}
+section{
+    position: absolute;
+    width: 95%;
+    left: 4%;
+    margin-left: 4px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+p{
+    font-size: 12px;
+    width: 58%;
+}
+.hollydays{
+    width: 460px;
+    border: solid 1px #DDD;
+    float: right;
+    margin-top: -1px;   
+}
+.search{
+    float: right;
+    margin-right: 100px;
+}
+.form-newsletter{
+    background: #f3f3f3 !important;
+}
+.form-control{
+    background: #fff !important;
+    margin-left: -30px;
+    margin-top: 20px;
+}
+.inner-addon {
+    position: relative;
+}
+.inner-addon .glyphicon {
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+}
+.left-addon .glyphicon {
+    left: 0px;
+    margin-left: -32px;
+    margin-top: 19px;
+}
+.left-addon input {
+    padding-left: 30px;
+}
+.svg-carrito{
+    position: absolute;    
+    margin-left: 185px;
+    margin-top: -25px;
+    width: 25px;
+}
+.titulo{
+    font-weight: bold;
+    font-size: 20px;
+}
+.title{
+    color: #d3d3d3;
+}
+.newsletter{
+    position: absolute;
+    left: 10%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.policy{
+    width: 95% !important;
+    padding-top: 10px;
+    margin-top: 20px;
+    border-top: 1px solid #dcdcdc;
+}
+.check-policy{
+    padding-top: 5px;
+    margin-top: 20px;
+}
+.valid.false {
+    background: red;
+}
+.valid.true {
+    background: green;
+}
+.error {
+    color: red;
+}
+.messege{
+    color:green; 
+    font-size: 16px; 
+    font-weight: bold;
+}
+
+@media only screen and (max-width :849px) {
+    nav {
+        border-bottom: 0;
+        height: auto;
+   }
+
+    nav ul {
+        display: none;
+        height: auto;
+        width: 50%;
+        float: left;
+    }
+
+    nav li {
+        width: 100%;
+        float: left;
+        position: relative;
+        background-color: #fff !important;
+        z-index: 1000;
+    }
+
+    nav a {
+        text-align: left;
+        width: 41%;
+        text-indent: 25px;
+    }
+
+    nav a#pull {
+        display: block;
+        width: 100%;
+        height: 30px;        
+        position: relative;
+    }
+
+    nav a#pull:after {
+        content:"";
+        background: url('nav-icon.png') no-repeat;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+    }
+    .hollydays{
+        width: 365px;
+        border: solid 0px #DDD;
+        float: left;
+        margin-left: -39px;
+        margin-top: -1px;
+        background-color: #fff !important;
+        z-index: 1000;
+    }
+}
